@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".newActivitytwo"
+    >
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="140dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_add_box_24" />
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="253dp"
+        android:layout_height="44dp"
+        android:background="#6724DF"
+        android:textColor="#C8DDC9FF"
+
+        android:ems="10"
+        android:padding="5dp"
+        android:text="Enter Your Name"
+
+        app:layout_constraintBottom_toTopOf="@+id/Phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+
+    <EditText
+        android:id="@+id/Phone"
+        android:layout_width="253dp"
+        android:layout_height="44dp"
+        android:background="#6724DF"
+        android:textColor="#C8DDC9FF"
+        android:ems="10"
+        android:inputType="phone"
+        android:padding="5dp"
+        android:text="Enter your phone number"
+
+        app:layout_constraintBottom_toTopOf="@+id/EmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:layout_constraintVertical_bias="0.744"
+        android:drawablePadding="16dp"
+        android:layout_weight="1"
+        android:hint="Density per letter"
+        android:drawableLeft="@drawable/phone" android:tooltipText="Phone"/>
+        />
+
+    <EditText
+        android:id="@+id/EmailAddress"
+        android:layout_width="253dp"
+        android:layout_height="44dp"
+        android:background="#6724DF"
+        android:textColor="#C8DDC9FF"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:padding="5dp"
+
+        android:text="Enter your e-mail address"
+
+        app:layout_constraintBottom_toTopOf="@+id/PostalAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:layout_constraintVertical_bias="0.858" />
+
+    <EditText
+        android:id="@+id/PostalAddress"
+        android:layout_width="253dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:background="#6724DF"
+        android:textColor="#C8DDC9FF"
+        android:inputType="textPostalAddress"
+        android:padding="5dp"
+        android:text="Enter your residential address"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.703" />
+
+    <Button
+        android:id="@+id/Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.297"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.875" />
+
+    <Button
+        android:id="@+id/Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="76dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.619"
+        app:layout_constraintStart_toEndOf="@+id/Back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.875" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

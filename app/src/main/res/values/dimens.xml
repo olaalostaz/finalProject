@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_fab_margin">25dp</dimen>
+    <dimen name="custom_card_elevation">10dp</dimen>
+    <dimen name="cutom_card_cornerRadius">10dp</dimen>
+    <dimen name="custom_contct_iv_height">100dp</dimen>
+    <dimen name="custom_contact_model_textSize">18sp</dimen>
+    <dimen name="custom_contact_tv_textcolor">14sp</dimen>
+    <dimen name="custom_contact_tv_txtphone">14sp</dimen>
+    <dimen name="custom_contact_tv">10dp</dimen>
+    <dimen name="custom_contact_tv_phone_width">250dp</dimen>
+</resources>

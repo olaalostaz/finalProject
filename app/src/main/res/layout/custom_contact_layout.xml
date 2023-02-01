@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/custom_contact_iv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="@dimen/cutom_card_cornerRadius"
+    app:cardElevation="@dimen/custom_card_elevation"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <ImageView
+            android:id="@+id/custom_contct_iv"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/custom_contct_iv_height"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <TextView
+            android:id="@+id/cutom_contact_tv_model"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/custom_contact_tv"
+            android:text="TextView"
+            android:textColor="@color/custom_contact_model_textColor"
+            android:textSize="@dimen/custom_contact_model_textSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/custom_contct_iv" />
+
+        <TextView
+            android:id="@+id/cutom_contact_tv_gmail"
+            android:layout_width="@dimen/custom_contact_tv_phone_width"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/gmail_"
+            android:drawablePadding="@dimen/custom_contact_tv"
+            android:gravity="clip_vertical"
+            android:padding="@dimen/custom_contact_tv"
+            android:text="TextView"
+            android:textColor="@color/custom_contact_model_textColor"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cutom_contact_tv_phone2" />
+
+        <TextView
+            android:id="@+id/cutom_contact_tv_phone2"
+            android:layout_width="@dimen/custom_contact_tv_phone_width"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/phone"
+            android:drawablePadding="@dimen/custom_contact_tv"
+            android:gravity="clip_vertical"
+            android:padding="@dimen/custom_contact_tv"
+            android:text="TextView"
+            android:textColor="@color/custom_contact_model_textColor"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cutom_contact_tv_model" />
+
+        <TextView
+            android:id="@+id/cutom_contact_tv_dpl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/sms"
+            android:drawablePadding="@dimen/custom_contact_tv"
+            android:gravity="clip_vertical"
+            android:padding="@dimen/custom_contact_tv"
+            android:text="TextView"
+            android:textColor="@color/custom_contact_model_textColor"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cutom_contact_tv_gmail"
+            app:layout_constraintTop_toBottomOf="@+id/cutom_contact_tv_model" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
